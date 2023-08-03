@@ -1,0 +1,38 @@
+<!<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Age Calculator APP</title>
+
+    <!--Custom CSS-->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <!-- User Form-->
+        <form>
+           <div class="main-title">
+            <h4>Age Calculator</h4>
+           </div>
+           <hr class="line-break">
+           <div class="input_field">
+            <label for="date" class="input-label">Birthday</label>
+            <input type="date" name="date" id="date">
+            <span id="error"></span>
+           </div>
+           <div class="input_field">
+            <button type="button" class="btn-submit" onclick="calculateAge()">Get Age</button>
+           </div>
+            
+        </form>
+        <!-- User Output -->
+        <div id="age"></div>
+
+    </div>
+
+    <!--Custom JS-->
+    <script src="script.js"></script>
+  </body>
+</html>
