@@ -51,11 +51,11 @@ function calculateAge(){
         }
 
         // Get Day
-        if(todayDay >= userday){
+        if(todayDay >= userDay){
             ageDay = todayDay - userDay;
         }else{
             ageMonth --;
-            ageDay = getDaysInMonth(userYear, userMonth) + today -userDay;
+            ageDay = getDaysInMonth(userYear, userMonth) + todayDay -userDay;
         }
 
         // If ageMonth becomes negative
@@ -66,7 +66,7 @@ function calculateAge(){
 
 
         // To show output
-        useAge.innerHTML = `Your age is: <span>${ageYear}</span/> years
+        userAge.innerHTML = `Your age is: <span>${ageYear}</span/> years
         <span>${ageMonth}</span/> months <span>${ageDay}</span/> days`
 
     }
